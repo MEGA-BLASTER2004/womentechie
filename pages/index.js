@@ -117,9 +117,9 @@ export default function Home() {
         <div className=" my-10 mx-auto flex w-max flex-col justify-center space-y-4 text-rose-500 lg:my-28 lg:mx-44 lg:space-y-3">
           <div className="flex w-full flex-col items-center justify-center">
             <h1 className="text-4xl font-extrabold md:mr-3 md:text-7xl">
-              WOMEN
+              Women
             </h1>
-            <h1 className="text-4xl font-extrabold md:text-7xl">TECHIES</h1>
+            <h1 className="text-4xl font-extrabold md:text-7xl">Techies</h1>
             <div className="flex w-full items-center space-x-1">
               <hr
                 className="h-[0.2rem] flex-grow border border-rose-500 md:h-[0.4rem]"
@@ -167,7 +167,7 @@ export default function Home() {
           <img
             src="COOL.svg"
             alt=""
-            className="lg: right-20 ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:top-10 lg:h-60 lg:w-60 xl:right-40 xl:top-16 xl:h-80 xl:w-80"
+            className="ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:right-20 lg:top-10 lg:h-60 lg:w-60 xl:right-36 xl:top-16 xl:h-80 xl:w-80"
           />
         </div>
       </div>
@@ -202,7 +202,7 @@ export default function Home() {
           <img
             src="HACKER.svg"
             alt=""
-            className="ml-10 h-40 w-40 lg:absolute lg:left-10 lg:top-60 lg:h-52 lg:w-52 xl:left-20 xl:top-36 xl:h-96 xl:w-96"
+            className="ml-10 h-40 w-40 lg:absolute lg:left-10 lg:top-60 lg:h-52 lg:w-52 xl:left-16 xl:top-36 xl:h-96 xl:w-96"
           />
         </div>
       </div>
@@ -224,11 +224,11 @@ export default function Home() {
           <img
             src="VISIONARY.svg"
             alt=""
-            className="right-24 mt-8 h-52 w-52 lg:absolute lg:top-40 lg:h-60 lg:w-60 xl:right-28 xl:top-8 xl:h-96 xl:w-96"
+            className="right-24 mt-8 h-52 w-52 lg:absolute lg:top-40 lg:h-60 lg:w-60 xl:right-10 xl:top-8 xl:h-96 xl:w-96"
           />
         </div>
       </div>
-      <div className="mt-10 flex flex-col items-center space-y-10 bg-pink-200 py-10">
+      <div className="mt-20 flex flex-col items-center space-y-10 bg-pink-200 py-10">
         <h1 className="border-b-4 border-pink-600 p-1 text-3xl font-bold text-pink-600">
           Timeline
         </h1>
@@ -246,7 +246,7 @@ export default function Home() {
           className="mx-auto self-center"
         />
       </div>
-      <div className="mt-10 flex flex-col items-center">
+      <div className="mt-20 flex flex-col items-center">
         <h1 className="border-b-2 border-purple-500 text-3xl font-bold text-purple-500">
           Speakers
         </h1>
@@ -281,7 +281,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div id="Sponsors" className="mt-10 flex flex-col items-center">
+      <div id="Sponsors" className="mt-20 flex flex-col items-center">
         <h1 className="border-b-2 border-orange-500 text-3xl font-bold text-orange-500">
           Past Sponsors
         </h1>
@@ -302,7 +302,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="mt-10 flex flex-col items-center">
+      <div className="mt-20 flex flex-col items-center">
         <h1 className="mb-10 border-b-2 border-purple-500 text-3xl font-bold text-purple-500">
           FAQ's
         </h1>

@@ -46,7 +46,7 @@ function Header({ setShowMenu, showMenu, setNavAnimation }) {
     window.addEventListener('scroll', transitionNavBar)
   }, [])
   return (
-    <div className="sticky top-0 z-50 flex w-screen justify-between bg-gray-50 shadow-md">
+    <div className="sticky top-0 z-50 flex w-screen justify-between bg-gray-50 shadow-lg">
       <img
         src="/GDSC.png"
         alt="GDSC"

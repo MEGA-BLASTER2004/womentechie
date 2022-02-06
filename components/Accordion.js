@@ -4,10 +4,11 @@ function Accordion() {
   return (
     <div className="w-11/12">
       <div class="accordion" id="accordionExample">
-        <div class="accordion-item border border-orange-100 bg-orange-100">
+        <div class="accordion-item border border-orange-200 bg-orange-100">
           <h2 class="accordion-header mb-0" id="headingOne">
             <button
               class="
+          collapsed
           accordion-button
           relative
           flex
@@ -26,7 +27,7 @@ function Accordion() {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               <span className="text-orange-600">
@@ -36,7 +37,7 @@ function Accordion() {
           </h2>
           <div
             id="collapseOne"
-            class="collapse accordion-collapse show"
+            class="collapse accordion-collapse"
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
@@ -89,7 +90,7 @@ function Accordion() {
             </div>
           </div>
         </div>
-        <div class="accordion-item border border-gray-200 bg-white">
+        <div class="accordion-item border border-purple-200 bg-white">
           <h2 class="accordion-header mb-0" id="headingThree">
             <button
               class="
@@ -126,6 +127,50 @@ function Accordion() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body bg-purple-100 py-4 px-5 text-purple-600">
+              The entire idea <strong>need not to be fully implemented</strong>{' '}
+              however,
+              <br /> The submission should be <strong>functional</strong> so
+              that it can be reviewed by the judges
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border border-yellow-200 bg-yellow-200">
+          <h2 class="accordion-header mb-0" id="headingFour">
+            <button
+              class="
+          collapsed
+          accordion-button
+          relative
+          flex
+          w-full
+          items-center
+          rounded-none
+          border-0
+          bg-yellow-100 py-4 px-5
+          text-left
+          text-base
+          text-yellow-600
+          transition
+          focus:outline-none
+        "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <span className="text-yellow-600">
+                Do we need to have the entire idea fully working?
+              </span>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="collapse accordion-collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body bg-yellow-100 py-4 px-5 text-yellow-600">
               The entire idea <strong>need not to be fully implemented</strong>{' '}
               however,
               <br /> The submission should be <strong>functional</strong> so
