@@ -9,6 +9,7 @@ module.exports = {
     backgroundImage: {
       techie: `url("./TECHIE.svg")`,
       techiesmall: `url("./TECHIEs.svg")`,
+      techiemedium: `url("./TECHIEm.svg")`,
       about: `url("./ABOUT.svg")`,
       hack: `url("./HACK.svg")`,
       vision: `url("./VISION.svg")`,

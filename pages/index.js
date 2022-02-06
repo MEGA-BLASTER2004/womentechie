@@ -112,9 +112,9 @@ export default function Home() {
 
       <div
         id="Home"
-        className="flex h-screen flex-col bg-techiesmall bg-cover bg-right-top bg-no-repeat md:bg-techie"
+        className="flex h-screen flex-col bg-techiesmall bg-cover bg-right-top bg-no-repeat sm:bg-techiemedium lg:bg-techie"
       >
-        <div className=" my-10 mx-auto flex w-max flex-col justify-center space-y-4 text-rose-500 md:my-28 md:mx-44 md:space-y-3">
+        <div className=" my-10 mx-auto flex w-max flex-col justify-center space-y-4 text-rose-500 lg:my-28 lg:mx-44 lg:space-y-3">
           <div className="flex w-full flex-col items-center justify-center">
             <h1 className="text-4xl font-extrabold md:mr-3 md:text-7xl">
               WOMEN
@@ -167,7 +167,7 @@ export default function Home() {
           <img
             src="COOL.svg"
             alt=""
-            className="ml-10 mt-5 h-40 w-40 justify-self-center md:absolute md:right-40 md:top-16 md:h-80 md:w-80"
+            className="ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:right-40 lg:top-16 lg:h-80 lg:w-80"
           />
         </div>
       </div>
@@ -202,7 +202,7 @@ export default function Home() {
           <img
             src="HACKER.svg"
             alt=""
-            className="ml-10 h-40 w-40 md:absolute md:left-48 md:top-36 md:h-96 md:w-96"
+            className="ml-10 h-40 w-40 lg:absolute lg:left-48 lg:top-36 lg:h-96 lg:w-96"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function Home() {
           <img
             src="VISIONARY.svg"
             alt=""
-            className="mt-8 h-40 w-40 md:absolute md:right-28 md:top-8 md:h-96 md:w-96"
+            className="mt-8 h-40 w-40 lg:absolute lg:right-28 lg:top-8 lg:h-96 lg:w-96"
           />
         </div>
       </div>
@@ -250,7 +250,7 @@ export default function Home() {
         <h1 className="border-b-2 border-purple-500 text-3xl font-bold text-purple-500">
           Speakers
         </h1>
-        <div className="mt-10 grid w-fit grid-cols-1 space-y-6 md:grid-cols-3 md:gap-16 md:space-y-0">
+        <div className="mt-10 grid w-fit grid-cols-1 space-y-6 px-2 md:grid-cols-3 md:gap-16 md:space-y-0">
           <RenderSpeaker
             colour={'purple'}
             bg={'bg-purple-200'}
@@ -285,7 +285,7 @@ export default function Home() {
         <h1 className="border-b-2 border-orange-500 text-3xl font-bold text-orange-500">
           Past Sponsors
         </h1>
-        <div className="mt-10 grid w-fit grid-cols-2 place-content-center justify-items-center space-y-10 md:grid-cols-4 md:gap-8 md:space-y-0">
+        <div className="mt-10 grid w-fit grid-cols-2 place-content-center justify-items-center space-y-10 px-3 md:grid-cols-4 md:gap-8 md:space-y-0">
           <img src="/BUGSEE.png" alt="BugSee" className="h-16" />
           <img src="/CLOUDSPLOIT.png" alt="Cloid Sploit" className="h-16" />
           <img src="/BALASAMIQ.png" alt="BalaSamiq" className="h-16" />
@@ -312,7 +312,7 @@ export default function Home() {
         <img
           src="/DISCORD.svg"
           alt=""
-          className="h-16 w-16 scale-90 cursor-pointer rounded-3xl object-cover opacity-50 duration-100 hover:scale-105 hover:opacity-100 active:scale-95 md:h-20 md:w-20"
+          className="h-20 w-20 scale-90 cursor-pointer rounded-3xl object-cover opacity-50 duration-100 hover:scale-105 hover:opacity-100 active:scale-95"
         />
       </div>
     </div>
