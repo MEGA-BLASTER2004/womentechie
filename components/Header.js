@@ -11,7 +11,7 @@ const RenderButton = ({ text, num, nav }) => {
       className={`${
         selected
           ? 'border-b-4 border-rose-500 text-rose-500'
-          : 'border-b-4 border-transparent text-black hover:border-red-500'
+          : 'border-b-4 border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900'
       } h-full font-semibold duration-150`}
     >
       {text}
