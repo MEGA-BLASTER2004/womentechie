@@ -112,7 +112,7 @@ export default function Home() {
 
       <div
         id="Home"
-        className="flex h-screen flex-col bg-techiesmall bg-cover bg-right-top bg-no-repeat sm:bg-techiemedium lg:bg-techie"
+        className="flex h-screen flex-col bg-techiesmall bg-cover bg-right-top bg-no-repeat sm:bg-techiemedium xl:bg-techie"
       >
         <div className=" my-10 mx-auto flex w-max flex-col justify-center space-y-4 text-rose-500 lg:my-28 lg:mx-44 lg:space-y-3">
           <div className="flex w-full flex-col items-center justify-center">
@@ -167,7 +167,7 @@ export default function Home() {
           <img
             src="COOL.svg"
             alt=""
-            className="ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:right-40 lg:top-16 lg:h-80 lg:w-80"
+            className="lg: right-20 ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:top-10 lg:h-60 lg:w-60 xl:right-40 xl:top-16 xl:h-80 xl:w-80"
           />
         </div>
       </div>
@@ -177,14 +177,14 @@ export default function Home() {
         className="relative flex h-screen flex-col bg-hack bg-cover bg-right bg-no-repeat"
       >
         <div className="mt-20 self-end text-lg font-extrabold md:mr-60 md:mt-40 md:text-2xl">
-          <h1 className="mb-2 text-pink-500">Hackathon</h1>
-          <p className="max-w-xs text-sm font-normal md:max-w-md md:text-lg">
+          <h1 className="z-10 mb-2 text-pink-500">Hackathon</h1>
+          <p className="z-10 max-w-xs text-sm font-normal md:max-w-md md:text-lg">
             This 24-hour hackathon aims to provide talented and independent
             women with the platform and resources to help them grow in their
             desired field and contribute to society with impactful and
             beneficial solutions.
           </p>
-          <p className="max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
+          <p className="z-10 max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
             <span className="font-bold">
               There is a minimum requirement of 50% female participation in each
               team
@@ -192,7 +192,7 @@ export default function Home() {
             , to ensure and promote womens participation in tech and
             tech-related events.
           </p>
-          <p className="max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
+          <p className="z-10 max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
             WomenTechies will be an opportunity for the budding developers to
             showcase their potential and skills under the mentorship of experts
             and come up with imperceptible ideas and ground-breaking solutions
@@ -202,7 +202,7 @@ export default function Home() {
           <img
             src="HACKER.svg"
             alt=""
-            className="ml-10 h-40 w-40 lg:absolute lg:left-48 lg:top-36 lg:h-96 lg:w-96"
+            className="ml-10 h-40 w-40 lg:absolute lg:left-10 lg:top-60 lg:h-52 lg:w-52 xl:left-20 xl:top-36 xl:h-96 xl:w-96"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function Home() {
           <img
             src="VISIONARY.svg"
             alt=""
-            className="mt-8 h-40 w-40 lg:absolute lg:right-28 lg:top-8 lg:h-96 lg:w-96"
+            className="right-24 mt-8 h-52 w-52 lg:absolute lg:top-40 lg:h-60 lg:w-60 xl:right-28 xl:top-8 xl:h-96 xl:w-96"
           />
         </div>
       </div>
