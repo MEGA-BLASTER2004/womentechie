@@ -5,6 +5,11 @@ import RenderSpeaker from '../components/RenderSpeaker'
 import Accordion from '../components/Accordion'
 import { useState } from 'react'
 import Router from 'next/router'
+import HomeComponent from '../components/Home'
+import AboutComponent from '../components/About'
+import HackathonComponent from '../components/Hackathon'
+import VisionComponent from '../components/Vision'
+import MobileNav from '../components/MobileNav'
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState(false)
@@ -18,216 +23,24 @@ export default function Home() {
         setShowMenu={setShowMenu}
         setNavAnimation={setNavOpenAnimation}
       />
-      <div
-        className={`${
-          showMenu ? 'flex bg-rose-50 md:hidden' : 'hidden'
-        } sticky top-0 bottom-0 z-40 h-screen w-screen flex-col items-center justify-center space-y-6 ${
-          navOpenAnimation ? 'animate-navopen' : ''
-        } ${navCloseAnimation ? 'animate-navclose' : ''}`}
-        onAnimationEnd={() => {
-          setNavOpenAnimation(false)
-          setNavCloseAnimation(false)
-        }}
-      >
-        <button
-          onClick={() => {
-            Router.push('#Home')
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-          className="w-32 rounded-lg bg-rose-200 px-4 py-2 text-rose-600"
-        >
-          Home
-        </button>
-        <button
-          onClick={() => {
-            Router.push('#About')
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-          className="w-32 rounded-lg bg-rose-200 px-4 py-2 text-rose-600"
-        >
-          About DSC
-        </button>
-        <button
-          onClick={() => {
-            Router.push('#Hackathon')
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-          className="w-32 rounded-lg bg-rose-200 px-4 py-2 text-rose-600"
-        >
-          Hackathon
-        </button>
-        <button
-          onClick={() => {
-            Router.push('#Vision')
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-          className="w-32 rounded-lg bg-rose-200 px-4 py-2 text-rose-600"
-        >
-          Vision
-        </button>
-        <button
-          onClick={() => {
-            Router.push('#Sponsors')
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-          className="w-32 rounded-lg bg-rose-200 px-4 py-2 text-rose-600"
-        >
-          Sponsors
-        </button>
-        <button
-          className="rounded-lg bg-red-500 px-4 py-2 text-white"
-          onClick={() => {
-            setNavCloseAnimation(true)
-            setTimeout(() => {
-              setShowMenu(false)
-              setNavCloseAnimation(false)
-            }, 500)
-          }}
-        >
-          X
-        </button>
-      </div>
+
+      <MobileNav
+        showMenu={showMenu}
+        setShowMenu={setShowMenu}
+        navOpenAnimation={navOpenAnimation}
+        navCloseAnimation={navCloseAnimation}
+        setNavOpenAnimation={setNavOpenAnimation}
+        setNavCloseAnimation={setNavCloseAnimation}
+      />
 
       {/* HOME COMPONENT */}
-
-      <div
-        id="Home"
-        className="flex h-screen flex-col bg-techiesmall bg-cover bg-right-top bg-no-repeat sm:bg-techiemedium xl:bg-techie"
-      >
-        <div className=" my-10 mx-auto flex w-max flex-col justify-center space-y-4 text-rose-500 lg:my-28 lg:mx-44 lg:space-y-3">
-          <div className="flex w-full flex-col items-center justify-center">
-            <h1 className="text-4xl font-extrabold md:mr-3 md:text-7xl">
-              Women
-            </h1>
-            <h1 className="text-4xl font-extrabold md:text-7xl">Techies</h1>
-            <div className="flex w-full items-center space-x-1">
-              <hr
-                className="h-[0.2rem] flex-grow border border-rose-500 md:h-[0.4rem]"
-                color="#f43f5d"
-              />
-              <h3 className="text-2xl font-bold md:text-4xl">2021</h3>
-              <hr
-                className="h-[0.2rem] flex-grow border border-rose-500 md:h-[0.4rem]"
-                color="#f43f5d"
-              />
-            </div>
-          </div>
-          <button className="rounded-full bg-rose-500 px-4 py-2 text-lg font-bold text-white duration-150 hover:scale-105 hover:bg-rose-600 active:scale-95">
-            Apply with Devfolio
-          </button>
-          <button className="w-fit self-center rounded-full border border-rose-500 px-4 py-2 text-lg font-bold text-rose-500 duration-150 hover:scale-105 hover:bg-rose-500 hover:text-white active:scale-95">
-            RSVP
-          </button>
-        </div>
-      </div>
-      <div
-        id="About"
-        className="flex h-screen flex-col bg-about bg-cover bg-left bg-no-repeat"
-      >
-        <div className="relative mt-20 ml-8 text-lg font-extrabold md:ml-32 md:mt-24 md:text-2xl">
-          <h1 className="mb-2 text-purple-500">About DSC</h1>
-          <p className="max-w-xs text-sm font-normal md:max-w-lg md:text-lg">
-            DSC VIT powered by Google Developers is a student community at VIT
-            Vellore. We strive to bring about technological innovations among
-            students and we do so by providing a platform for them to exhibit
-            their talents. We are a group of passionate designers, developers
-            and managers who work together to bring about collaborative results
-            that better the lives of everyone around us.
-          </p>
-
-          <h1 className="mb-2 mt-8 text-purple-500">About VIT</h1>
-          <p className="max-w-xs text-sm font-normal md:max-w-lg md:text-lg">
-            DSC VIT powered by Google Developers is a student community at VIT
-            Vellore. We strive to bring about technological innovations among
-            students and we do so by providing a platform for them to exhibit
-            their talents. We are a group of passionate designers, developers
-            and managers who work together to bring about collaborative results
-            that better the lives of everyone around us.
-          </p>
-          <img
-            src="COOL.svg"
-            alt=""
-            className="ml-10 mt-5 h-40 w-40 justify-self-center lg:absolute lg:right-20 lg:top-10 lg:h-60 lg:w-60 xl:right-36 xl:top-16 xl:h-80 xl:w-80"
-          />
-        </div>
-      </div>
-
-      <div
-        id="Hackathon"
-        className="relative flex h-screen flex-col bg-hack bg-cover bg-right bg-no-repeat"
-      >
-        <div className="mt-20 self-end text-lg font-extrabold md:mr-60 md:mt-40 md:text-2xl">
-          <h1 className="z-10 mb-2 text-pink-500">Hackathon</h1>
-          <p className="z-10 max-w-xs text-sm font-normal md:max-w-md md:text-lg">
-            This 24-hour hackathon aims to provide talented and independent
-            women with the platform and resources to help them grow in their
-            desired field and contribute to society with impactful and
-            beneficial solutions.
-          </p>
-          <p className="z-10 max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
-            <span className="font-bold">
-              There is a minimum requirement of 50% female participation in each
-              team
-            </span>
-            , to ensure and promote womens participation in tech and
-            tech-related events.
-          </p>
-          <p className="z-10 max-w-xs pt-4 text-sm font-normal md:max-w-md md:text-lg">
-            WomenTechies will be an opportunity for the budding developers to
-            showcase their potential and skills under the mentorship of experts
-            and come up with imperceptible ideas and ground-breaking solutions
-            to problems that could potentially solve the woes of thousands of
-            people.
-          </p>
-          <img
-            src="HACKER.svg"
-            alt=""
-            className="ml-10 h-40 w-40 lg:absolute lg:left-10 lg:top-60 lg:h-52 lg:w-52 xl:left-16 xl:top-36 xl:h-96 xl:w-96"
-          />
-        </div>
-      </div>
-      <div
-        id="Vision"
-        className="flex h-screen flex-col bg-vision bg-cover bg-left bg-no-repeat"
-      >
-        <div className="relative mt-28 ml-4 text-lg font-extrabold md:ml-32 md:mt-40 md:text-2xl">
-          <h1 className="mb-2 text-orange-500">Vision</h1>
-          <p className="mt-8 text-sm font-normal md:max-w-lg md:text-lg">
-            We have been organising Women Techies with a goal to encourage and
-            facilitate the <br /> participation of women in the tech space.
-          </p>
-          <p className="mt-4 text-sm font-normal md:max-w-lg md:text-lg">
-            Knowing that our efforts benefit so many talented women and being
-            able to see the satisfaction on our participant{"'"}s faces makes
-            all of us extremely proud in the work that we do.
-          </p>
-          <img
-            src="VISIONARY.svg"
-            alt=""
-            className="right-24 mt-8 h-52 w-52 lg:absolute lg:top-40 lg:h-60 lg:w-60 xl:right-10 xl:top-8 xl:h-96 xl:w-96"
-          />
-        </div>
-      </div>
+      <HomeComponent />
+      {/* ABOUT COMPONENT */}
+      <AboutComponent />
+      {/* HACKATHON COMPONENT */}
+      <HackathonComponent />
+      {/* VISION COMPONENT */}
+      <VisionComponent />
       <div className="mt-20 flex flex-col items-center space-y-10 bg-pink-200 py-10">
         <h1 className="border-b-4 border-pink-600 p-1 text-3xl font-bold text-pink-600">
           Timeline
